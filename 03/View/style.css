@@ -1,0 +1,245 @@
+/* CSS Simples e Básico */
+
+/* Estilos globais para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte principal */
+    margin: 20px; /* Margem externa em todos os lados */
+    background-color: #f5f5f5; /* Cor de fundo clara */
+    color: #333; /* Cor do texto principal */
+}
+
+/* Contêiner principal para centralizar o conteúdo */
+.container {
+    max-width: 800px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    background-color: white; /* Cor de fundo branca para o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda sutil */
+}
+
+/* Estilos para títulos */
+h1 {
+    color: #333; /* Cor do título */
+    text-align: center; /* Alinhamento centralizado */
+    margin-bottom: 30px; /* Margem inferior */
+}
+
+h2 {
+    color: #555; /* Cor do subtítulo */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+h3 {
+    color: #666; /* Cor do subtítulo de nível 3 */
+    margin-bottom: 15px; /* Margem inferior */
+}
+
+h4 {
+    color: #333; /* Cor do subtítulo de nível 4 */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Seção de busca */
+.busca {
+    margin-bottom: 30px; /* Margem inferior */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo clara */
+    border: 1px solid #ddd; /* Borda */
+}
+
+.busca input[type="text"] {
+    width: 60%; /* Largura do campo de texto */
+    padding: 8px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    margin-right: 10px; /* Margem à direita */
+}
+
+.busca button {
+    padding: 8px 15px; /* Espaçamento interno */
+    background-color: #007cba; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Altera o cursor para indicar clicável */
+}
+
+.busca button:hover {
+    background-color: #005a87; /* Cor de fundo ao passar o mouse */
+}
+
+.busca a {
+    margin-left: 10px; /* Margem à esquerda */
+    color: #007cba; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.busca a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Resultados da busca */
+.resultados {
+    margin-top: 30px; /* Margem superior */
+}
+
+.paciente {
+    margin-bottom: 30px; /* Margem inferior entre os cards de paciente */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda */
+    background-color: #fafafa; /* Cor de fundo clara */
+}
+
+.paciente table {
+    width: 100%; /* Largura total da tabela */
+    border-collapse: collapse; /* Colapsa as bordas da tabela */
+    margin: 15px 0; /* Margem superior e inferior */
+}
+
+.paciente table td {
+    padding: 8px; /* Espaçamento interno das células */
+    border-bottom: 1px solid #eee; /* Borda inferior das células */
+}
+
+.paciente table td:first-child {
+    width: 200px; /* Largura da primeira coluna (rótulos) */
+    vertical-align: top; /* Alinhamento vertical superior */
+}
+
+/* Estilos para botões genéricos */
+.botao {
+    display: inline-block; /* Permite definir largura e altura, mas mantém na linha */
+    padding: 10px 15px; /* Espaçamento interno */
+    background-color: #007cba; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    border: none; /* Remove borda */
+    cursor: pointer; /* Altera o cursor */
+    margin-top: 15px; /* Margem superior */
+}
+
+.botao:hover {
+    background-color: #005a87; /* Cor de fundo ao passar o mouse */
+}
+
+/* Botão de remover específico */
+.botao-remover {
+    padding: 5px 10px; /* Espaçamento interno */
+    background-color: #d9534f; /* Cor de fundo (vermelho) */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda */
+    cursor: pointer; /* Altera o cursor */
+}
+
+.botao-remover:hover {
+    background-color: #c9302c; /* Cor de fundo ao passar o mouse */
+}
+
+/* Mensagem de sem resultados */
+.sem-resultado {
+    text-align: center; /* Alinhamento centralizado */
+    padding: 40px; /* Espaçamento interno */
+    color: #666; /* Cor do texto */
+}
+
+/* Página de editar exames */
+.info-paciente {
+    margin-bottom: 30px; /* Margem inferior */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo */
+    border: 1px solid #ddd; /* Borda */
+}
+
+/* Estilos para mensagens de feedback (sucesso/erro) */
+.mensagem {
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Margem inferior */
+    border: 1px solid; /* Borda */
+}
+
+.mensagem.sucesso {
+    background-color: #d4edda; /* Cor de fundo verde claro */
+    color: #155724; /* Cor do texto verde escuro */
+    border-color: #c3e6cb; /* Cor da borda verde */
+}
+
+.mensagem.erro {
+    background-color: #f8d7da; /* Cor de fundo vermelho claro */
+    color: #721c24; /* Cor do texto vermelho escuro */
+    border-color: #f5c6cb; /* Cor da borda vermelha */
+}
+
+/* Seção de exames (adicionar e atuais) */
+.secao-exames {
+    display: flex; /* Usa flexbox para layout */
+    gap: 30px; /* Espaçamento entre os itens flex */
+}
+
+.adicionar-exame,
+.exames-atuais {
+    flex: 1; /* Faz com que ambos ocupem o mesmo espaço disponível */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo */
+    border: 1px solid #ddd; /* Borda */
+}
+
+.adicionar-exame label {
+    display: block; /* Ocupa a largura total */
+    margin-bottom: 5px; /* Margem inferior */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.adicionar-exame select {
+    width: 100%; /* Largura total */
+    padding: 8px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    margin-bottom: 15px; /* Margem inferior */
+}
+
+/* Item de exame individual */
+.exame {
+    margin-bottom: 15px; /* Margem inferior */
+    padding: 15px; /* Espaçamento interno */
+    background-color: white; /* Cor de fundo */
+    border: 1px solid #ddd; /* Borda */
+    display: flex; /* Usa flexbox para layout */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Alinhamento vertical centralizado */
+}
+
+.exame div {
+    flex: 1; /* Ocupa o espaço disponível */
+}
+
+.exame h4 {
+    margin: 0 0 5px 0; /* Margens para o título do exame */
+}
+
+.exame p {
+    margin: 0; /* Remove margens padrão */
+    color: #666; /* Cor do texto */
+    font-size: 0.9em; /* Tamanho da fonte */
+}
+
+/* Responsivo básico para telas menores (max-width: 600px) */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px; /* Margem menor em telas pequenas */
+        padding: 15px; /* Padding menor */
+    }
+    
+    .busca input[type="text"] {
+        width: 100%; /* Ocupa a largura total */
+        margin-bottom: 10px; /* Margem inferior */
+        margin-right: 0; /* Remove margem direita */
+    }
+    
+    .secao-exames {
+        flex-direction: column; /* Altera para layout de coluna */
+    }
+    
+    .exame {
+        flex-direction: column; /* Altera para layout de coluna */
+        align-items: flex-start; /* Alinha itens ao início */
+        gap: 10px; /* Espaçamento entre itens */
+    }
+}
+
